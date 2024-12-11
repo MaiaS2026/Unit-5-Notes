@@ -7,33 +7,40 @@ public class Student {
     // 1. INSTANCE VARIABLES (attributes/data/fields)
     // think fo what this object "needs to know"
     // must be PRIVATE ("encapsulation")
-    private String fName; // "a Student has a name"
-    private String lName;
+    private String firstName; // "a Student has a name"
+    private String lastName;
     private int gradYear;
     private String email;
 
     // 2. CONSTRUCTORS (manuals for setting up an object)
 
     // DEFAULT constructor (user did not provide data)
+    // "no-argument" constructor
     // Job: initialize instance variables to default values
     public Student() {
-        fName = "First";
-        lName = "Last";
+        firstName = "First";
+        lastName = "Last";
         gradYear = 2037;
-        email = fName + "." + lName + gradYear + "@gbwl.org";
+        email = firstName + "." + lastName + gradYear + "@gbwl.org";
     }
 
     // Constructor with PARAMETERS (user provided key data)
     // Job: initialize instance variables to PROVIDED values
-    public Student (String initfName, String initlName, int initGradYear) {
-        fName = initfName;
-        lName = initlName;
+    // ORDER OF PARAMETERS IS IMPORTANT!!! (the data types)
+    // "initfirstName", etc. are like PLACEHOLDERS for real values
+    public Student (String initfirstName, String initlastName, int initGradYear) {
+        firstName = initfirstName;
+        lastName = initlastName;
         gradYear = initGradYear;
-        email = fName + "." + lName + gradYear + "@gbwl.org";
-
+        email = firstName + "." + lastName + gradYear + "@gbwl.org";
     }
 
-
     // 3. METHODS (behaviors associated w/the object type)
+
+    // toString method provides a "String Representation"
+    // of an obejct instance with all its data!
+    public String toString() {
+        return("Student[" + firstName + "," + lastName + "," + gradYear + "," + email + "]");
+    }
 
 }
