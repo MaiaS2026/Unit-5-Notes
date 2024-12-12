@@ -43,4 +43,20 @@ public class Student {
         return("Student[" + firstName + "," + lastName + "," + gradYear + "," + email + "]");
     }
 
+    // ACCESSOR METHODS "Getters" return copies of the private data
+    // write one for each of your instance variables 
+    // for the name variable
+    public String getfirstName() {
+        return firstName;
+    }
+    public String getlastName() {
+        return lastName;
+    }
+    public int getgradYear() {
+        return gradYear;
+    }
+    public String getEmail() {
+        return email;
+    }
+
 }
