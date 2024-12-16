@@ -35,5 +35,14 @@ public class Main {
       // 2. or by using it directly
       System.out.println(kinder.getEmail());
 
+      // Test MUTATOR/SETTER methods
+      // void methods (no output)
+      // but they need an argument (input)
+      kinder.setFirstName("James");
+      kinder.setLastName("Smith");
+      kinder.setEmail("James.Walter2037@gwbl.org");
+      System.out.println(kinder);
+      
+
    }
 }
