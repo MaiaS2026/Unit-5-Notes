@@ -42,6 +42,12 @@ public class Main {
       kinder.setLastName("Smith");
       kinder.setEmail("James.Walter2037@gwbl.org");
       System.out.println(kinder);
+
+      // Use the Object class' equals () method
+      // Checks the values of each instance variable
+      // junior is the CALLING OBJECT, kinder is the argument
+      boolean isEqual = junior.equals(kinder);
+
       
 
    }
