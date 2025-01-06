@@ -55,7 +55,8 @@ public class Main {
       // Example: no output, needs input (includes FOR loop)
       junior.doHomework(8);
 
-      
+      // Testing the student class documentation
+      StudentDocs test = new StudentDocs()
 
    }
 }
