@@ -56,7 +56,12 @@ public class Main {
       junior.doHomework(8);
 
       // Testing the student class documentation
-      StudentDocs test = new StudentDocs()
+      // HOVER over the words to view the docs we wrote
+      StudentDocs test = new StudentDocs("Talulah","Whelan", 2026);
+      test.getEmail();
+      test.setGradYear(2025);
+      test.doHomework(10);
+
 
    }
 }
